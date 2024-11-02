@@ -126,29 +126,29 @@ class HumanPlayer extends Player
 
 }
 
-// class AiPlayer extends Player
-// {
-// 	AiPlayer(String name , char mark)
-// 	{
-// 		this.name = name;
-// 		this.mark = mark;
-// 	}
+class AiPlayer extends Player
+{
+	AiPlayer(String name , char mark)
+	{
+		this.name = name;
+		this.mark = mark;
+	}
 	
-// 	void makeMove()
-// 	{
-// 		Scanner scan = new Scanner(System.in);
-// 		int row,col;
-// 		do {
-// 			Random r = new Random();
-// 			row = r.nextInt(3);
-// 			col = r.nextInt(3);
-// 		}
-// 		while(!isValidMove(row,col));
+	void makeMove()
+	{
+		Scanner scan = new Scanner(System.in);
+		int row,col;
+		do {
+			Random r = new Random();
+			row = r.nextInt(3);
+			col = r.nextInt(3);
+		}
+		while(!isValidMove(row,col));
 
-// 		TicTacToe.placeMark(row , col , mark);
-// 	}
+		TicTacToe.placeMark(row , col , mark);
+	}
 	
-// }
+}
 
 // Main Class
 public class Launch_Game {
